@@ -1,108 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Escolher Atividade</title>
-</head>
-<body>
-    <button id="btnAtividade1">Executar Atividade 1</button>
-    <button id="btnAtividade2">Executar Atividade 2</button>
-    <button id="btnAtividade3">Executar atividade 3</button>
-    <button id="btnAtividade4">Executar atividade 4</button>
-    <button id="btnAtividade5">Executar atividade 5</button>
-    <button id="btnAtividade6">Executar atividade 6</button>
-    <button id="btnAtividade7">Executar atividade 7</button>
-    <button id="btnAtividade8">Executar atividade 8</button>
-    <button id="btnAtividade9">Executar atividade 9</button>
-    <button id="btnAtividade10">Executar atividade 10</button>
-    <button id="btnAtividade11">Executar atividade 11</button>
-    <button id="btnAtividade12">Executar atividade 12</button>
-    <button id="btnAtividade13">Executar atividade 13</button>
-    <button id="btnAtividade14">Executar atividade 14</button>
-    <button id="btnAtividade15">Executar atividade 15</button>
-    <button id="btnAtividade16">Executar atividade 16</button>
-    <button id="btnAtividade17">Executar atividade 17</button>
-    <button id="btnAtividade18">Executar atividade 18</button>
-    <button id="btnAtividade19">Executar atividade 19</button>
-    <button id="btnAtividade20">Executar atividade 20</button>
-    
+  </head>
+  <body>
+    <form>
+      <label for="atividades">Escolha uma Atividade:</label>
+      <select name="atividades" id="atividades">
+        <option value="">Escolha uma Atividade:</option>
+        <option value="atividade1">Atividade 1</option>
+        <option value="atividade2">Atividade 2</option>
+        <option value="atividade3">Atividade 3</option>
+        <option value="atividade4">Atividade 4</option>
+        <option value="atividade5">Atividade 5</option>
+        <option value="atividade6">Atividade 6</option>
+        <option value="atividade7">Atividade 7</option>
+        <option value="atividade8">Atividade 8</option>
+        <option value="atividade9">Atividade 9</option>
+        <option value="atividade10">Atividade 10</option>
+        <option value="atividade11">Atividade 11</option>
+        <option value="atividade12">Atividade 12</option>
+        <option value="atividade13">Atividade 13</option>
+        <option value="atividade14">Atividade 14</option>
+        <option value="atividade15">Atividade 15</option>
+        <option value="atividade16">Atividade 16</option>
+        <option value="atividade17">Atividade 17</option>
+        <option value="atividade18">Atividade 18</option>
+        <option value="atividade19">Atividade 19</option>
+        <option value="atividade20">Atividade 20</option>
+      </select>
+      <button type="button" id="btnAtividade">Selecionar Atividade</button>
+    </form>
 
     <script src="atividades.js"></script>
     <script>
-        document.getElementById('btnAtividade1').addEventListener('click', () => {
-            atividade1();
-        });
+      document.addEventListener("DOMContentLoaded", () => {
+        document
+          .getElementById("btnAtividade")
+          .addEventListener("click", () => {
+            const select = document.getElementById("atividades");
+            const selectedValue = select.value;
 
-        document.getElementById('btnAtividade2').addEventListener('click', () => {
-            atividade2();
-        });
-        document.getElementById('btnAtividade3').addEventListener('click', () => {
-            atividade3();
-        });
-        document.getElementById('btnAtividade4').addEventListener('click', () => {
-            atividade4();
-        });
-        document.getElementById('btnAtividade5').addEventListener('click', () => {
-            atividade5();
-        });
-        document.getElementById('btnAtividade6').addEventListener('click', () => {
-            atividade6();
-        });
-        document.getElementById('btnAtividade7').addEventListener('click', () => {
-            atividade7();
-        });
-        document.getElementById('btnAtividade8').addEventListener('click', () => {
-            atividade8();
-        });
-        document.getElementById('btnAtividade9').addEventListener('click', () => {
-            atividade9();
-        });
-        document.getElementById('btnAtividade10').addEventListener('click', () => {
-            atividade10();
-        });
-        document.getElementById('btnAtividade11').addEventListener('click', () => {
-            atividade11();
-        });
-       
-        document.getElementById('btnAtividade12').addEventListener('click', () => {
-            atividade12();
-        });
-       
-        document.getElementById('btnAtividade13').addEventListener('click', () => {
-            atividade13();
-        });
-       
-        document.getElementById('btnAtividade14').addEventListener('click', () => {
-            atividade14();
-        });
-       
-        document.getElementById('btnAtividade15').addEventListener('click', () => {
-            atividade15();
-        });
-        document.getElementById('btnAtividade16').addEventListener('click', () => {
-            atividade16();
-        });
-        document.getElementById('btnAtividade17').addEventListener('click', () => {
-            atividade17();
-        });
-       
-        document.getElementById('btnAtividade17').addEventListener('click', () => {
-            atividade18();
-        });
-       
-        document.getElementById('btnAtividade17').addEventListener('click', () => {
-            atividade19();
-        });
-       
-        document.getElementById('btnAtividade17').addEventListener('click', () => {
-            atividade20();
-        });
-       
-
-       
-
-     
+            switch (selectedValue) {
+              case "atividade1":
+                atividade1();
+                break;
+              case "atividade2":
+                atividade2();
+                break;
+              case "atividade3":
+                atividade3();
+                break;
+              case "atividade4":
+                atividade4();
+                break;
+              case "atividade5":
+                atividade5();
+                break;
+              case "atividade6":
+                atividade6();
+                break;
+              case "atividade7":
+                atividade7();
+                break;
+              case "atividade8":
+                atividade8();
+                break;
+              case "atividade9":
+                atividade9();
+                break;
+              case "atividade10":
+                atividade10();
+                break;
+              case "atividade11":
+                atividade11();
+                break;
+              case "atividade12":
+                atividade12();
+                break;
+              case "atividade13":
+                atividade13();
+                break;
+              case "atividade14":
+                atividade14();
+                break;
+              case "atividade15":
+                atividade15();
+                break;
+              case "atividade16":
+                atividade16();
+                break;
+              case "atividade17":
+                atividade17();
+                break;
+              case "atividade18":
+                atividade18();
+                break;
+              case "atividade19":
+                atividade19();
+                break;
+              case "atividade20":
+                atividade20();
+                break;
+              default:
+                alert("Por favor, escolha uma atividade.");
+            }
+          });
+      });
     </script>
-</body>
+  </body>
 </html>
