@@ -4,36 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Escolher Atividade</title>
+    <style>
+      body{
+        background-color: rgb(0,206,209);
+      }
+      .elemento-pai {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Adicionando altura para centralizar verticalmente */
+      }
+
+      .elemento-filho {
+        display: inline-block;
+        position: relative;
+        border: 25px solid transparent;
+        font-size: 25px;
+        background-color: rgb(211,211,211);
+        border-image: url("./132d0b11f96dcffaa700966900312a52.jpg") 150 round;
+        border-radius: 150px
+      }
+    </style>
   </head>
   <body>
-    <form>
-      <label for="atividades">Escolha uma Atividade:</label>
-      <select name="atividades" id="atividades">
-        <option value="">Escolha uma Atividade:</option>
-        <option value="atividade1">Atividade 1</option>
-        <option value="atividade2">Atividade 2</option>
-        <option value="atividade3">Atividade 3</option>
-        <option value="atividade4">Atividade 4</option>
-        <option value="atividade5">Atividade 5</option>
-        <option value="atividade6">Atividade 6</option>
-        <option value="atividade7">Atividade 7</option>
-        <option value="atividade8">Atividade 8</option>
-        <option value="atividade9">Atividade 9</option>
-        <option value="atividade10">Atividade 10</option>
-        <option value="atividade11">Atividade 11</option>
-        <option value="atividade12">Atividade 12</option>
-        <option value="atividade13">Atividade 13</option>
-        <option value="atividade14">Atividade 14</option>
-        <option value="atividade15">Atividade 15</option>
-        <option value="atividade16">Atividade 16</option>
-        <option value="atividade17">Atividade 17</option>
-        <option value="atividade18">Atividade 18</option>
-        <option value="atividade19">Atividade 19</option>
-        <option value="atividade20">Atividade 20</option>
-      </select>
-      <button type="button" id="btnAtividade">Selecionar Atividade</button>
-    </form>
-
+    <div class="elemento-pai">
+      <form class="elemento-filho">
+        <label for="atividades">Escolha uma Atividade:</label>
+        <select name="atividades" id="atividades">
+          <option value="">Escolha uma Atividade:</option>
+          <option value="atividade1">Atividade 1</option>
+          <option value="atividade2">Atividade 2</option>
+          <option value="atividade3">Atividade 3</option>
+          <option value="atividade4">Atividade 4</option>
+          <option value="atividade5">Atividade 5</option>
+          <option value="atividade6">Atividade 6</option>
+          <option value="atividade7">Atividade 7</option>
+          <option value="atividade8">Atividade 8</option>
+          <option value="atividade9">Atividade 9</option>
+          <option value="atividade10">Atividade 10</option>
+          <option value="atividade11">Atividade 11</option>
+          <option value="atividade12">Atividade 12</option>
+          <option value="atividade13">Atividade 13</option>
+          <option value="atividade14">Atividade 14</option>
+          <option value="atividade15">Atividade 15</option>
+          <option value="atividade16">Atividade 16</option>
+          <option value="atividade17">Atividade 17</option>
+          <option value="atividade18">Atividade 18</option>
+          <option value="atividade19">Atividade 19</option>
+          <option value="atividade20">Atividade 20</option>
+        </select>
+        <button type="button" id="btnAtividade">Selecionar Atividade</button>
+      </form>
+    </div>
     <script src="atividades.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
